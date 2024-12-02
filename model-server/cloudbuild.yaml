@@ -26,7 +26,7 @@ steps:
     - my-app
     - --source=.
     - --platform=managed
-    - --region=asia-southeast2
+    - --region=us-central1
     - --allow-unauthenticated
     - --update-env-vars=GOOGLE_APPLICATION_CREDENTIALS=credential.json
 

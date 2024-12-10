@@ -3,3 +3,5 @@
 package-lock.json
 servers.js
 handlers.js
+inferenceService.js
+loadModel.js

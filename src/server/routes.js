@@ -1,10 +1,10 @@
-const { postPredictHandler, postPredictHistoriesHandler } = require('../server/handler');
+const { postImageHandler, postImageHistoriesHandler } = require('./handlers');
  
 const routes = [
   {
-    path: '/predict',
+    path: '/image',
     method: 'POST',
-    handler: postPredictHandler,
+    handler: postImageHandler,
     options: {
       payload: {
         allow: 'multipart/form-data',
@@ -14,9 +14,9 @@ const routes = [
     }
   },
   {
-    path: '/predict/histories',
+    path: '/image/histories',
     method: 'GET',
-    handler: postPredictHistoriesHandler,
+    handler: postImageHistoriesHandler,
   }
 ]
  
